@@ -31,6 +31,18 @@
 </style>
 <body>
     <h2>Lista de Alunos</h2>
+    <section id="relatorios" style="max-width:900px;margin:0 auto 18px;padding:12px;border:1px solid #e6e6e6;border-radius:6px;background:#fafafa;">
+        <h3 style="margin:0 0 8px 0">Relatórios</h3>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+            <button id="btnAprovados">Listar alunos aprovados</button>
+            <button id="btnMediaNotas">Média das notas</button>
+            <button id="btnNomesOrdem">Nomes em ordem alfabética</button>
+            <button id="btnPorCurso">Quantidade por curso</button>
+            <button id="btnLimparRel" style="margin-left:12px">Limpar relatório</button>
+        </div>
+        <div id="relatorioResultado" style="white-space:pre-wrap;color:#111;"></div>
+    </section>
+
     <table id="tabelaAlunos" border="1">
         <thead>
             <tr>
@@ -38,6 +50,8 @@
                 <th>Nome</th>
                 <th>Curso</th>
                 <th>Período</th>
+                <th>Nota</th>
+                <th>Status</th>
                 <th>Ações</th>
             </tr>
         </thead>
